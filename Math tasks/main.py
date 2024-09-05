@@ -8,6 +8,14 @@ from ternary_operator import (
     check_numbers_odd,
     shop,
 )
+from cycles import (
+    multi,
+    from_0_to_x,
+    fiba,
+    factorial,
+    symbol,
+)
+
 
 if __name__ == "__main__":
     while True:
@@ -20,6 +28,10 @@ if __name__ == "__main__":
         print("6. Найти сумму трёх")
         print("7. Чётное или нет")
         print("8. Магазин")
+        print("9. Таблица умножения х4")
+        print("10. От 0 до Х")
+        print("11. Фиба")
+        print("12. Факториал")
         print("0. Выход")
 
         choice = input("Ваш выбор (введите номер задачи): ")
@@ -40,6 +52,16 @@ if __name__ == "__main__":
             check_numbers_odd()
         elif choice == '8':
             shop()
+        elif choice == '9':
+            multi()
+        elif choice == '10':
+            from_0_to_x()
+        elif choice == '11':
+            fiba()
+        elif choice == '12':
+            factorial()
+        elif choice == '13':
+            symbol()
         elif choice == '0':
             print("Спасибо за использование программы!")
             break

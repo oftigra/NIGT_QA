@@ -108,21 +108,20 @@ def sum_of_three():
 
     for i in range(3):
         number = get_number(f"Число {i + 1}: ")
-        numbers.append(number)  # Добавляем введенное число в список
+        numbers.append(number)
 
-    max_number = max(numbers)  # Находим максимальное число
-    min_number = min(numbers)  # Находим минимальное число
-    sum_of_extremes = max_number + min_number  # Считаем сумму
+    max_number = max(numbers)
+    min_number = min(numbers)
+    sum_of_extremes = max_number + min_number
 
     print(f"Сумма наибольшего ({max_number}) и наименьшего ({min_number}) чисел равна: {sum_of_extremes}")
 
 # 7) Чётное или нет
 def is_even(number):
-    """Проверяет, является ли число четным."""
+
     return number % 2 == 0
 
 def check_numbers_odd():
-    """Запрашивает у пользователя числа и выводит, четные они или нечетные."""
     while True:
         user_input = input("Введите число (или 'exit' для выхода): ")
 
@@ -142,7 +141,6 @@ def check_numbers_odd():
 
 # 8) Магазин
 def display_menu(products):
-    """Отображает меню товаров."""
     print("Доступные товары:")
     for i, (product, price) in enumerate(products.items(), start=1):
         print(f"{i}. {product} - {price} рублей")
